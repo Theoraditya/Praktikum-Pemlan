@@ -34,7 +34,7 @@ public class atributBuku {
 
     //methods
     public void tampilkanKategori(){
-        System.out.printf("============|BUKU KATEGORI %s|============\n", kategoriBuku);
+        System.out.printf("============|KATEGORI BUKU %s|============\n", kategoriBuku);
     }
     public void tampilkan(){
         System.out.printf("1. Nama Buku      : %s \n", namaBuku);
