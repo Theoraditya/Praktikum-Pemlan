@@ -48,7 +48,7 @@ public class mainBuku {
                                 {"Milea: suara dari Dilan","Pidi Baiq","2016","PT Mizan Pustaka","9786020851563","357"},
                                 {"The Hunger Games","Suzanne Collins","2012","Gramedia Pustaka Utama","9789792250756","406"}};
 
-            System.out.println("===============|PERPUSTAKAAN|===============");
+            System.out.println("=================|PERPUSTAKAAN|=================");
             System.out.println("Kategori buku: ");
             System.out.println("1. Teknologi");
             System.out.println("2. Filsafat");
@@ -78,8 +78,8 @@ public class mainBuku {
                 break;
                 case 8: System.out.printf("Total buku ada: %d", teknologi.length + filsafat.length + sejarah.length + agama.length + psikologi.length + politik.length + fiksi.length);
                 default:
-                    if (pilih > 9) {
-                    System.out.println("PROGRAM BERAKHIR");
+                    if (pilih >= 9) {
+                    System.out.println("PROGRAM BERAKHIR! anda memasukkan kode yang salah");
                 } break;
             }
     }

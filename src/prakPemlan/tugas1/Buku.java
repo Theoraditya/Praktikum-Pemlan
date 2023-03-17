@@ -1,29 +1,16 @@
 package prakPemlan.tugas1;
 
-public class atributBuku {
-    private String kategoriBuku;
-    private String namaBuku;
-    private String penulis;
-    private String tahunTerbit;
-    private String penerbit;
-    private String ISBN;
-    private String jumlahHal;
+public class Buku {
+    private String kategoriBuku, namaBuku, penulis, tahunTerbit, penerbit, ISBN, jumlahHal;
 
-    //mutator (setter)
     public void setKategori(String kategoriBuku){
         this.kategoriBuku = kategoriBuku;
-    }
-    public void setPenulis(String penulis){
-        this.penulis = penulis;
     }
     public void setNamaBuku(String namaBuku){
         this.namaBuku = namaBuku;
     }
-    public void setHalaman(String jumlahHal) {
-        this.jumlahHal = jumlahHal;
-    }
-    public void setISBNBuku(String ISBN) {
-        this.ISBN = ISBN;
+    public void setPenulis(String penulis){
+        this.penulis = penulis;
     }
     public void setTahun(String tahunTerbit) {
         this.tahunTerbit = tahunTerbit;
@@ -31,8 +18,13 @@ public class atributBuku {
     public void setPenerbit(String penerbit) {
         this.penerbit = penerbit;
     }
+    public void setISBNBuku(String ISBN) {
+        this.ISBN = ISBN;
+    }
+    public void setHalaman(String jumlahHal) {
+        this.jumlahHal = jumlahHal;
+    }
 
-    //methods
     public void tampilkanKategori(){
         System.out.printf("============|KATEGORI BUKU %s|============\n", kategoriBuku);
     }
