@@ -1,30 +1,23 @@
-package prakPemlan.tugas1;
+package prakPemlan.tugas2;
 
 public class Buku {
-    private String kategoriBuku, namaBuku, penulis, tahunTerbit, penerbit, ISBN, jumlahHal;
+    private String kategoriBuku, namaBuku, penulis, tahunTerbit, penerbit, ISBN, jumlahHal, sinopsis;
+
+    public Buku (String namaBuku, String penulis, String tahunTerbit, String penerbit, String ISBN, String jumlahHal, String sinopsis){
+        this.namaBuku = namaBuku;
+        this.penulis = penulis;
+        this.tahunTerbit = tahunTerbit;
+        this.penerbit = penerbit;
+        this.ISBN = ISBN;
+        this.jumlahHal = jumlahHal;
+        this.sinopsis = sinopsis;
+    }
 
     public void setKategori(String kategoriBuku){
         this.kategoriBuku = kategoriBuku;
     }
-    public void setNamaBuku(String namaBuku){
-        this.namaBuku = namaBuku;
-    }
-    public void setPenulis(String penulis){
-        this.penulis = penulis;
-    }
-    public void setTahun(String tahunTerbit) {
-        this.tahunTerbit = tahunTerbit;
-    }
-    public void setPenerbit(String penerbit) {
-        this.penerbit = penerbit;
-    }
-    public void setISBNBuku(String ISBN) {
-        this.ISBN = ISBN;
-    }
-    public void setHalaman(String jumlahHal) {
-        this.jumlahHal = jumlahHal;
-    }
     public void tampilkanKategori(){
+
         System.out.printf("============|KATEGORI BUKU %s|============\n", kategoriBuku);
     }
     public void tampilkan(){

@@ -1,11 +1,9 @@
 package prakPemlan.tugas1;
-
 import java.util.Scanner;
-
 public class mainBuku {
     public static void main(String[] args) {
-        int pilih;
         Scanner in = new Scanner (System.in);
+        // nama buku, penulis, tahun terbit, penerbit, ISBN, jumlah halaman buku
         String [][] teknologi = {{"Pengantar Teknologi Informatika Dan Komunikasi Data","Bagaskoro","2019","Deepublish","9786232099418","134"},
                                 {"Teknologi Informasi: Aplikasi dan Penerapannya","Janner Simarmata","2020","Yayasan Kita Menulis","9786236512920","130"},
                                 {"Cyber Society: Teknologi, Media Baru, dan Disrupsi Informasi","Catur Nugroho","2020","Prenada Media","9786232187412","176"},
@@ -59,7 +57,7 @@ public class mainBuku {
             System.out.println("7. Fiksi");
             System.out.println("8. Total Buku yang ada");
             System.out.print("Pilihan anda: ");
-            pilih = in.nextInt();
+            int pilih = in.nextInt();
             System.out.println();
             switch (pilih) {
                 case 1: setBuku(teknologi, "TEKNOLOGI");
@@ -84,7 +82,7 @@ public class mainBuku {
             }
     }
     public static void setBuku(String[][]data, String pilihanKategori){
-        atributBuku n = new atributBuku();
+        Buku n = new Buku();
         n.setKategori(pilihanKategori);
         n.tampilkanKategori();
         for(int i = 0; i < data.length; i++) {
