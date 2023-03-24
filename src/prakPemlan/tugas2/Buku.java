@@ -2,7 +2,6 @@ package prakPemlan.tugas2;
 
 public class Buku {
     private String namaBuku, penulis, tahunTerbit, penerbit, ISBN, jumlahHal, sinopsis;
-    public String buku;
 
     public Buku (String namaBuku, String penulis, String tahunTerbit, String penerbit, String ISBN, String jumlahHal, String sinopsis){
         this.namaBuku = namaBuku;
@@ -14,21 +13,18 @@ public class Buku {
         this.sinopsis = sinopsis;
     }
 
-    public int hitungJmlKata(String jmlSinopsis){
-        boolean afkhSpasi = true;
+    public int hitungKata(String jmlSinopsis){
+        boolean Spasi = true;
         int jmlKata = 0;
         for(int i = 0; i < jmlSinopsis.length(); i++){
-            if(jmlSinopsis.charAt(i) == ' ') afkhSpasi = true;
+            if(jmlSinopsis.charAt(i) == ' ')
+                Spasi = true;
             else{
-                if(afkhSpasi) jmlKata++;
-                afkhSpasi = false;
+                if(Spasi) jmlKata++;
+                Spasi = false;
             }
         }
         return jmlKata;
-    }
-    public Buku copy(){
-        Buku bukuCopy = new Buku(namaBuku, penulis, tahunTerbit, penerbit, ISBN, jumlahHal, sinopsis);
-        return bukuCopy;
     }
     void tampilkan(){
         System.out.printf("1. Nama Buku         : %s \n", namaBuku);
@@ -38,7 +34,7 @@ public class Buku {
         System.out.printf("5. ISBN              : %s \n", ISBN);
         System.out.printf("6. Jumlah Halaman    : %s \n", jumlahHal);
         System.out.printf("7. Sinopsis          : %s \n", sinopsis);
-        System.out.printf("Jumlah Kata Sinopsis : %s \n", hitungJmlKata(sinopsis));
+        System.out.printf("Jumlah Kata Sinopsis : %s \n", hitungKata(sinopsis));
         System.out.println();
     }
 }
