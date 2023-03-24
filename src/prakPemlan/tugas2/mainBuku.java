@@ -1,5 +1,4 @@
 package prakPemlan.tugas2;
-
 import java.util.Scanner;
 public class mainBuku {
     public static void main(String[] args) {
