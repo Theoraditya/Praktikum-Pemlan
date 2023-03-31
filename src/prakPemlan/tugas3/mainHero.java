@@ -43,7 +43,7 @@ public class mainHero {
         Hero hero2 = new Hero(NamaHero2, HPHero2, AttackHero2, DefenseHero2);
 
         int ronde = 1;
-        if (hero1.getAttack() >= hero2.getDefense() && hero1.getDefense() <= hero2.getAttack()) {
+        if (hero1.getAttack() <= hero2.getDefense() && hero1.getDefense() >= hero2.getAttack()) {
             System.out.println("============================================================");
             System.out.println("====================[PERTARUNGAN IMBANG]====================");
             System.out.println("============================================================");
