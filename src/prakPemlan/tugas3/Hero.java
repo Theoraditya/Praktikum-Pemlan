@@ -48,11 +48,6 @@ public class Hero {
             Musuh.setHP(Musuh.getHP() - damage);
             if (this.hp < 0) this.hp = 0;
             if (Musuh.getHP() < 0) Musuh.setHP(0);
-            System.out.println("===========================[STATUS]============================");
-            System.out.println(this.getName() + " => [ HP : " + this.getHP() + " ][ Atttack : " + this.getAttack() + " ][ Defense : " + this.getDefense() + " ]");
-            System.out.println(Musuh.getName() + " => [ HP : " + Musuh.getHP() + " ][ Attack : " + Musuh.getAttack() + " ][ Defense : " + Musuh.getDefense() + " ]");
-            System.out.println("===============================================================");
-            System.out.println("\n");
         }
     }
 }

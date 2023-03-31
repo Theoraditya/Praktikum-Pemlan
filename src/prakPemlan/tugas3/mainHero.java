@@ -51,10 +51,16 @@ public class mainHero {
             while (hero1.getHP() > 0 && hero2.getHP()>0){
                 System.out.println("===========================[RONDE " + ronde + "]===========================");
                 hero1.Game(hero2);
+                System.out.println();
                 hero2.Game(hero1);
                 ronde++;
+                System.out.println("===========================[STATUS]============================");
+                System.out.println(hero1.getName() + " => [ HP : " + hero1.getHP() + " ][ Atttack : " + hero1.getAttack() + " ][ Defense : " + hero1.getDefense() + " ]");
+                System.out.println(hero2.getName() + " => [ HP : " + hero2.getHP() + " ][ Attack : " + hero2.getAttack() + " ][ Defense : " + hero2.getDefense() + " ]");
+                System.out.println("=============================================================== \n");
             }
             if (hero1.getHP()> hero2.getHP()){
+                System.out.println();
                 System.out.println("Pertarungan telah usai!");
                 System.out.println(hero2.getName() + " telah kalah!");
                 System.out.println("===============================================================");
