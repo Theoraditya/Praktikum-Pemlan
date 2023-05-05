@@ -27,9 +27,7 @@ public class Hero {
     public void setDefense(double defense){
         this.defense = defense;
     }
-    public double getDefense(){
-        return this.defense;
-    }
+    public double getDefense(){ return defense; }
     public Hero(String name, double hp, double attack, double defense) {
         this.name = name;
         this.hp = hp;
