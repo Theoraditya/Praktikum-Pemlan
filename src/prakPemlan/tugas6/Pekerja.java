@@ -47,4 +47,5 @@ public class Pekerja extends Manusia{
                 "Gaji          : $" + getGaji() +
                 "\n"
         );
-    } }
+    }
+}
