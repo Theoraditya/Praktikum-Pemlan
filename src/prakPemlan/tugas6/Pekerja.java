@@ -32,7 +32,7 @@ public class Pekerja extends Manusia{
         }
     }
     public double getTunjangan() {
-        return super.getTunjangan() + getJumlahAnak()*20;
+        return super.getTunjangan() + getJumlahAnak() * 20;
     }
     public double getPendapatan() {
         return getTunjangan() + getBonus() + getGaji();
