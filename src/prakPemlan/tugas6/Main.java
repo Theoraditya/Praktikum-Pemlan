@@ -14,7 +14,7 @@ public class Main {
         System.out.println("====================================================");
 
         //Belum menikah
-        Manusia manusia3 = new Manusia("Rafan", "24", true, false);
+        Manusia manusia3 = new Manusia("Rafan", "307434", true, false);
         System.out.println(manusia3);
         System.out.println("====================================================");
 

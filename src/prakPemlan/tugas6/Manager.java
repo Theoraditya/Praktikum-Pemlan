@@ -10,7 +10,7 @@ public class Manager extends Pekerja {
         return departemen;
     }
     public double getGaji2() {
-        return super.getGaji()*0.1;
+        return super.getGaji() * 0.1;
     }
     public double getTunjangan() {
         return super.getTunjangan() + getGaji2();
