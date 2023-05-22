@@ -23,7 +23,6 @@ public class mainKue {
         kue[17] = new KueJadi("Kue Talam", 1500, 3);
         kue[18] = new KueJadi("Wajik", 3000, 6);
         kue[19] = new KueJadi("Kue Putu Ayu", 2500, 3);
-        // Isikan objek kue lainnya sesuai kebutuhan
 
         double totalHarga = 0;
         double totalHargaKuePesanan = 0;
