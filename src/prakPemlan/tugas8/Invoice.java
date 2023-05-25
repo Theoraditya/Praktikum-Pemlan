@@ -1,30 +1,30 @@
 package prakPemlan.tugas8;
 
 class Invoice implements Payable {
-    private String namaProduk;
-    private Integer jumlah;
-    private Double harga;
+    private String productName;
+    private Integer quantity;
+    private Integer pricePerItem;
 
-    public Invoice(String namaProduk, Integer jumlah, Double harga) {
-        this.namaProduk = namaProduk;
-        this.jumlah= jumlah;
-        this.harga = harga;
+    public Invoice(String productName, Integer quantity, Integer pricePerItem) {
+        this.productName = productName;
+        this.quantity= quantity;
+        this.pricePerItem = pricePerItem;
     }
 
-    public String getNamaProduk() {
-        return namaProduk;
+    public String getProductName() {
+        return productName;
     }
 
-    public Integer getJumlah() {
-        return jumlah;
+    public Integer getQuantity() {
+        return quantity;
     }
 
-    public Double getHarga() {
-        return harga;
+    public Integer getpricePerItem() {
+        return pricePerItem;
     }
 
     @Override
     public double getPayableAmount() {
-        return jumlah * harga;
+        return quantity * pricePerItem;
     }
 }

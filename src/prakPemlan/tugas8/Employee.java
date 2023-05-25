@@ -1,28 +1,28 @@
 package prakPemlan.tugas8;
 
 class Employee implements Payable {
-    private Integer nomorReg;
-    private String nama;
-    private Double gajiPerBulan;
+    private Integer registrationNumber;
+    private String name;
+    private Integer salaryPerMonth;
     private Invoice[] invoices;
 
-    public Employee(Integer nomorReg, String nama, Double gajiPerBulan, Invoice[] invoices) {
-        this.nomorReg = nomorReg;
-        this.nama = nama;
-        this.gajiPerBulan = gajiPerBulan;
+    public Employee(Integer registrationNumber, String name, Integer salaryPerMonth, Invoice[] invoices) {
+        this.registrationNumber = registrationNumber;
+        this.name = name;
+        this.salaryPerMonth = salaryPerMonth;
         this.invoices = invoices;
     }
 
-    public Integer getNomorReg() {
-        return nomorReg;
+    public Integer getRegistrationNumber() {
+        return registrationNumber;
     }
 
-    public String getNama() {
-        return nama;
+    public String getName() {
+        return name;
     }
 
-    public Double getGajiPerBulan() {
-        return gajiPerBulan;
+    public Integer getSalaryPerMonth() {
+        return salaryPerMonth;
     }
 
     public Invoice[] getInvoices() {
@@ -35,6 +35,6 @@ class Employee implements Payable {
         for (Invoice invoice : invoices) {
             totalInvoicesAmount += invoice.getPayableAmount();
         }
-        return gajiPerBulan - totalInvoicesAmount;
+        return salaryPerMonth - totalInvoicesAmount;
     }
 }
