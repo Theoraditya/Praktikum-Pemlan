@@ -25,8 +25,8 @@ public class mainKoperasi {
             System.out.println();
         }
 
-        double totalGaji = employee.getPayableAmount();
-        System.out.println("\nTotal gaji saat ini : Rp" + totalGaji);
+        double totalGajii = employee.getPayableAmount();
+        System.out.println("\nTotal gaji saat ini : Rp" + totalGajii);
         System.out.println("===========================================================");
     }
 }
