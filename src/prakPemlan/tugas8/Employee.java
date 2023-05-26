@@ -31,7 +31,7 @@ class Employee implements Payable {
 
     @Override
     public double getPayableAmount() {
-        double totalInvoicesAmount = 1;
+        double totalInvoicesAmount = 0;
         for (Invoice invoice : invoices) {
             totalInvoicesAmount += invoice.getPayableAmount();
         }
